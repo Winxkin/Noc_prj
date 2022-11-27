@@ -728,8 +728,7 @@ LAB76:    t22 = (t6 + 4);
     if (t27 > 0)
         goto LAB77;
 
-LAB78:
-LAB79:    xsi_set_current_line(66, ng0);
+LAB78:    xsi_set_current_line(66, ng0);
     t2 = (t0 + 3024);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
@@ -767,7 +766,8 @@ LAB83:    t22 = (t6 + 4);
         goto LAB84;
 
 LAB85:
-LAB86:    xsi_set_current_line(69, ng0);
+LAB86:
+LAB79:    xsi_set_current_line(69, ng0);
     t2 = (t0 + 3024);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
@@ -1206,6 +1206,6 @@ LAB100:    xsi_set_current_line(72, ng0);
 extern void work_m_00000000004243163298_1894719351_init()
 {
 	static char *pe[] = {(void *)Cont_34_0,(void *)Cont_35_1,(void *)Always_37_2};
-	xsi_register_didat("work_m_00000000004243163298_1894719351", "isim/FIFO_buffer_tb_isim_beh.exe.sim/work/m_00000000004243163298_1894719351.didat");
+	xsi_register_didat("work_m_00000000004243163298_1894719351", "isim/FIFO_Buffer_isim_beh.exe.sim/work/m_00000000004243163298_1894719351.didat");
 	xsi_register_executes(pe);
 }

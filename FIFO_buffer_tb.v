@@ -28,7 +28,6 @@ module FIFO_buffer_tb;
 	reg [7:0] Data_in;
 	reg clk;
 	reg rst;
-	reg en;
 	reg write;
 	reg read;
 
@@ -42,7 +41,6 @@ module FIFO_buffer_tb;
 		.Data_in(Data_in), 
 		.clk(clk), 
 		.rst(rst), 
-		.en(en), 
 		.write(write), 
 		.read(read), 
 		.Data_out(Data_out), 
@@ -55,7 +53,6 @@ module FIFO_buffer_tb;
 		Data_in = 0;
 		clk = 0;
 		rst = 0;
-		en = 1;
 		write = 0;
 		read = 0;
 
@@ -81,10 +78,18 @@ module FIFO_buffer_tb;
 		Data_in = 6;
 		#20
 		Data_in = 7;
-		#10
-		write = 0;
 		#20
-		read = 1;
+		Data_in = 8;
+		#20
+		Data_in = 9;
+		#20
+		Data_in = 10;
+		#20
+		Data_in = 11;
+		//#30
+		//write = 0;
+		//#20
+		//read = 1;
 		
 	end
 	

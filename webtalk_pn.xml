@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Nov 27 14:25:45 2022">
+<application name="pn" timeStamp="Sun Nov 27 16:26:15 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="FCCC888411AD426C9C351C8B4AD3F9FF" type="project"/>
-<property name="ProjectIteration" value="8" type="project"/>
+<property name="ProjectIteration" value="10" type="project"/>
 <property name="ProjectFile" value="D:/LuanVan/Xlinx/Noc_prj/Noc_prj/Noc_prj.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2022-11-27T10:17:13" type="project"/>
 </section>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2022-11-27T10:17:13" type="design"/>
 <property name="PROP_intWbtProjectID" value="FCCC888411AD426C9C351C8B4AD3F9FF" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="8" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="10" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.FIFO_buffer_tb" type="process"/>
@@ -37,7 +37,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_VERILOG" value="4" type="source"/>
+<property name="FILE_VERILOG" value="5" type="source"/>
 </section>
 </application>
 </document>

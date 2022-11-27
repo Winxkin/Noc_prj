@@ -23,3 +23,18 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 FIFO_Buffe
 map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FIFO_Buffer_map.ncd FIFO_Buffer.ngd FIFO_Buffer.pcf 
 par -w -intstyle ise -ol high -mt off FIFO_Buffer_map.ncd FIFO_Buffer.ncd FIFO_Buffer.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FIFO_Buffer.twx FIFO_Buffer.ncd -o FIFO_Buffer.twr FIFO_Buffer.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 FIFO_Buffer.ngc FIFO_Buffer.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FIFO_Buffer_map.ncd FIFO_Buffer.ngd FIFO_Buffer.pcf 
+par -w -intstyle ise -ol high -mt off FIFO_Buffer_map.ncd FIFO_Buffer.ncd FIFO_Buffer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FIFO_Buffer.twx FIFO_Buffer.ncd -o FIFO_Buffer.twr FIFO_Buffer.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 FIFO_Buffer.ngc FIFO_Buffer.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FIFO_Buffer_map.ncd FIFO_Buffer.ngd FIFO_Buffer.pcf 
+par -w -intstyle ise -ol high -mt off FIFO_Buffer_map.ncd FIFO_Buffer.ncd FIFO_Buffer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FIFO_Buffer.twx FIFO_Buffer.ncd -o FIFO_Buffer.twr FIFO_Buffer.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_Buffer.syr" 
