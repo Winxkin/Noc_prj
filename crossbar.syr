@@ -120,12 +120,12 @@ Elaborating module <crossbar>.
 
 Synthesizing Unit <crossbar>.
     Related source file is "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v".
-        DATA_WIDTH = 128
-    Found 128-bit 7-to-1 multiplexer for signal <Out_L> created at line 39.
-    Found 128-bit 7-to-1 multiplexer for signal <Out_N> created at line 48.
-    Found 128-bit 7-to-1 multiplexer for signal <Out_W> created at line 57.
-    Found 128-bit 7-to-1 multiplexer for signal <Out_S> created at line 66.
-    Found 128-bit 7-to-1 multiplexer for signal <Out_E> created at line 75.
+        DATA_WIDTH = 8
+    Found 8-bit 7-to-1 multiplexer for signal <Out_L> created at line 39.
+    Found 8-bit 7-to-1 multiplexer for signal <Out_N> created at line 48.
+    Found 8-bit 7-to-1 multiplexer for signal <Out_W> created at line 57.
+    Found 8-bit 7-to-1 multiplexer for signal <Out_S> created at line 66.
+    Found 8-bit 7-to-1 multiplexer for signal <Out_E> created at line 75.
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <crossbar> synthesized.
@@ -135,7 +135,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 5
- 128-bit 7-to-1 multiplexer                            : 5
+ 8-bit 7-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -149,7 +149,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 5
- 128-bit 7-to-1 multiplexer                            : 5
+ 8-bit 7-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -161,7 +161,7 @@ Optimizing unit <crossbar> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block crossbar, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block crossbar, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -190,12 +190,12 @@ Top Level Output File Name         : crossbar.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1280
-#      LUT5                        : 640
-#      LUT6                        : 640
-# IO Buffers                       : 1295
-#      IBUF                        : 655
-#      OBUF                        : 640
+# BELS                             : 80
+#      LUT5                        : 40
+#      LUT6                        : 40
+# IO Buffers                       : 95
+#      IBUF                        : 55
+#      OBUF                        : 40
 
 Device utilization summary:
 ---------------------------
@@ -204,23 +204,21 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                 1280  out of  63400     2%  
-    Number used as Logic:              1280  out of  63400     2%  
+ Number of Slice LUTs:                   80  out of  63400     0%  
+    Number used as Logic:                80  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1280
-   Number with an unused Flip Flop:    1280  out of   1280   100%  
-   Number with an unused LUT:             0  out of   1280     0%  
-   Number of fully used LUT-FF pairs:     0  out of   1280     0%  
+ Number of LUT Flip Flop pairs used:     80
+   Number with an unused Flip Flop:      80  out of     80   100%  
+   Number with an unused LUT:             0  out of     80     0%  
+   Number of fully used LUT-FF pairs:     0  out of     80     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                        1295
- Number of bonded IOBs:                1295  out of    210   616% (*) 
+ Number of IOs:                          95
+ Number of bonded IOBs:                  95  out of    210    45%  
 
 Specific Feature Utilization:
-
-WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -253,7 +251,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 1.604ns
+   Maximum combinational path delay: 1.531ns
 
 Timing Details:
 ---------------
@@ -261,23 +259,23 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 6400 / 640
+  Total number of paths / destination ports: 400 / 40
 -------------------------------------------------------------------------
-Delay:               1.604ns (Levels of Logic = 4)
+Delay:               1.531ns (Levels of Logic = 4)
   Source:            Select_L<0> (PAD)
-  Destination:       Out_L<127> (PAD)
+  Destination:       Out_L<7> (PAD)
 
-  Data Path: Select_L<0> to Out_L<127>
+  Data Path: Select_L<0> to Out_L<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           256   0.001   0.834  Select_L_0_IBUF (Select_L_0_IBUF)
-     LUT6:I0->O            1   0.097   0.295  Mmux_Out_L1271 (Mmux_Out_L127)
-     LUT5:I4->O            1   0.097   0.279  Mmux_Out_L1272 (Out_L_99_OBUF)
-     OBUF:I->O                 0.000          Out_L_99_OBUF (Out_L<99>)
+     IBUF:I->O            16   0.001   0.762  Select_L_0_IBUF (Select_L_0_IBUF)
+     LUT6:I0->O            1   0.097   0.295  Mmux_Out_L11 (Mmux_Out_L1)
+     LUT5:I4->O            1   0.097   0.279  Mmux_Out_L12 (Out_L_0_OBUF)
+     OBUF:I->O                 0.000          Out_L_0_OBUF (Out_L<0>)
     ----------------------------------------
-    Total                      1.604ns (0.195ns logic, 1.409ns route)
-                                       (12.2% logic, 87.8% route)
+    Total                      1.531ns (0.195ns logic, 1.336ns route)
+                                       (12.7% logic, 87.3% route)
 
 =========================================================================
 
@@ -287,14 +285,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.91 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.13 secs
  
 --> 
 
-Total memory usage is 4683392 kilobytes
+Total memory usage is 4690624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

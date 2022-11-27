@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb_beh.prj" "work.crossbar_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_buffer_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_buffer_tb_beh.prj" "work.FIFO_buffer_tb" "work.glbl" 

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-UOCPQU7::  Sun Nov 27 12:54:32 2022
+DESKTOP-UOCPQU7::  Sun Nov 27 13:54:40 2022
 
 par -w -intstyle ise -ol high -mt off crossbar_map.ncd crossbar.ncd
 crossbar.pcf 
@@ -28,21 +28,21 @@ Device Utilization Summary:
 
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of 126,800    0%
-  Number of Slice LUTs:                         60 out of  63,400    1%
-    Number used as logic:                       60 out of  63,400    1%
-      Number using O6 output only:              40
+  Number of Slice LUTs:                         80 out of  63,400    1%
+    Number used as logic:                       80 out of  63,400    1%
+      Number using O6 output only:              80
       Number using O5 output only:               0
-      Number using O5 and O6:                   20
+      Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:      0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    20 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:           60
-    Number with an unused Flip Flop:            60 out of      60  100%
-    Number with an unused LUT:                   0 out of      60    0%
-    Number of fully used LUT-FF pairs:           0 out of      60    0%
+  Number of occupied Slices:                    32 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           80
+    Number with an unused Flip Flop:            80 out of      80  100%
+    Number with an unused LUT:                   0 out of      80    0%
+    Number of fully used LUT-FF pairs:           0 out of      80    0%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -55,7 +55,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        87 out of     210   41%
+  Number of bonded IOBs:                        95 out of     210   45%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -92,33 +92,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 10 secs 
-Finished initial Timing Analysis.  REAL time: 10 secs 
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
 
 Starting Router
 
 
-Phase  1  : 384 unrouted;      REAL time: 10 secs 
+Phase  1  : 480 unrouted;      REAL time: 9 secs 
 
-Phase  2  : 364 unrouted;      REAL time: 10 secs 
+Phase  2  : 480 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 134 unrouted;      REAL time: 11 secs 
+Phase  3  : 218 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 134 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  4  : 218 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: crossbar.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion: 13 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Total REAL time to Router completion: 12 secs 
+Total CPU time to Router completion: 12 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -137,10 +137,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 14 secs 
-Total CPU time to PAR completion: 14 secs 
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 12 secs 
 
-Peak Memory Usage:  4854 MB
+Peak Memory Usage:  4848 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

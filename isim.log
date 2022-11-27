@@ -1,22 +1,10 @@
 ISim log file
-Running: D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb_isim_beh.wdb 
+Running: D:\LuanVan\Xlinx\Noc_prj\Noc_prj\FIFO_buffer_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/LuanVan/Xlinx/Noc_prj/Noc_prj/FIFO_buffer_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 28.  For instance crossbar_tb/uut/, width 128 of formal port In_L is not equal to width 8 of actual variable In_L. 
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 29.  For instance crossbar_tb/uut/, width 128 of formal port In_N is not equal to width 8 of actual variable In_N. 
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 30.  For instance crossbar_tb/uut/, width 128 of formal port In_E is not equal to width 8 of actual variable In_E. 
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 31.  For instance crossbar_tb/uut/, width 128 of formal port In_W is not equal to width 8 of actual variable In_W. 
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 32.  For instance crossbar_tb/uut/, width 128 of formal port In_S is not equal to width 8 of actual variable In_S. 
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 40.  For instance crossbar_tb/uut/, width 128 of formal port Out_L is not equal to width 8 of actual signal Out_L.
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 41.  For instance crossbar_tb/uut/, width 128 of formal port Out_N is not equal to width 8 of actual signal Out_N.
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 42.  For instance crossbar_tb/uut/, width 128 of formal port Out_E is not equal to width 8 of actual signal Out_E.
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 43.  For instance crossbar_tb/uut/, width 128 of formal port Out_W is not equal to width 8 of actual signal Out_W.
-WARNING: File "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 44.  For instance crossbar_tb/uut/, width 128 of formal port Out_S is not equal to width 8 of actual signal Out_S.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us

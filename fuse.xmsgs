@@ -5,35 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 48: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">In_L</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 49: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">In_N</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 50: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">In_E</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 51: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">In_W</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 52: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">In_S</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 53: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Out_L</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 54: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Out_N</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 55: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Out_E</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 56: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Out_W</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/LuanVan/Xlinx/Noc_prj/Noc_prj/crossbar_tb.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Out_S</arg>&gt;. Formal port size is <arg fmt="%d" index="2">128</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
-</msg>
-
 </messages>
 
