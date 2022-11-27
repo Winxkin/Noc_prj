@@ -1,0 +1,28 @@
+Command line:
+   crossbar_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62944
+
+Sun Nov 27 13:00:48 2022
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5810.72 Meg
+
+ Total Signals          : 28
+ Total Nets             : 1308
+ Total Signal Drivers   : 20
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 23
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 2115
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5810.72 Meg
+
+Sun Nov 27 13:01:12 2022
+

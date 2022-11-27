@@ -1,0 +1,331 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml crossbar.twx crossbar.ncd -o crossbar.twr crossbar.pcf
+
+Design file:              crossbar.ncd
+Physical constraint file: crossbar.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+In_E<0>        |Out_E<0>       |    7.663|
+In_E<0>        |Out_L<0>       |    7.750|
+In_E<0>        |Out_N<0>       |    7.449|
+In_E<0>        |Out_S<0>       |    8.201|
+In_E<0>        |Out_W<0>       |    7.998|
+In_E<1>        |Out_E<1>       |    6.640|
+In_E<1>        |Out_L<1>       |    6.577|
+In_E<1>        |Out_N<1>       |    6.797|
+In_E<1>        |Out_S<1>       |    6.736|
+In_E<1>        |Out_W<1>       |    6.557|
+In_E<2>        |Out_E<2>       |    6.564|
+In_E<2>        |Out_L<2>       |    7.744|
+In_E<2>        |Out_N<2>       |    7.034|
+In_E<2>        |Out_S<2>       |    7.681|
+In_E<2>        |Out_W<2>       |    7.667|
+In_E<3>        |Out_E<3>       |    7.046|
+In_E<3>        |Out_L<3>       |    8.256|
+In_E<3>        |Out_N<3>       |    7.537|
+In_E<3>        |Out_S<3>       |    8.081|
+In_E<3>        |Out_W<3>       |    7.532|
+In_E<4>        |Out_E<4>       |    7.467|
+In_E<4>        |Out_L<4>       |    7.414|
+In_E<4>        |Out_N<4>       |    7.582|
+In_E<4>        |Out_S<4>       |    6.878|
+In_E<4>        |Out_W<4>       |    7.153|
+In_E<5>        |Out_E<5>       |    7.832|
+In_E<5>        |Out_L<5>       |    8.010|
+In_E<5>        |Out_N<5>       |    7.052|
+In_E<5>        |Out_S<5>       |    7.065|
+In_E<5>        |Out_W<5>       |    6.846|
+In_E<6>        |Out_E<6>       |    7.670|
+In_E<6>        |Out_L<6>       |    7.113|
+In_E<6>        |Out_N<6>       |    7.872|
+In_E<6>        |Out_S<6>       |    7.271|
+In_E<6>        |Out_W<6>       |    7.884|
+In_E<7>        |Out_E<7>       |    6.892|
+In_E<7>        |Out_L<7>       |    7.077|
+In_E<7>        |Out_N<7>       |    7.206|
+In_E<7>        |Out_S<7>       |    6.521|
+In_E<7>        |Out_W<7>       |    6.799|
+In_L<0>        |Out_E<0>       |    7.835|
+In_L<0>        |Out_L<0>       |    8.647|
+In_L<0>        |Out_N<0>       |    8.121|
+In_L<0>        |Out_S<0>       |    8.421|
+In_L<0>        |Out_W<0>       |    8.450|
+In_L<1>        |Out_E<1>       |    8.055|
+In_L<1>        |Out_L<1>       |    8.512|
+In_L<1>        |Out_N<1>       |    8.195|
+In_L<1>        |Out_S<1>       |    7.967|
+In_L<1>        |Out_W<1>       |    8.035|
+In_L<2>        |Out_E<2>       |    7.175|
+In_L<2>        |Out_L<2>       |    8.343|
+In_L<2>        |Out_N<2>       |    7.701|
+In_L<2>        |Out_S<2>       |    8.287|
+In_L<2>        |Out_W<2>       |    8.347|
+In_L<3>        |Out_E<3>       |    7.415|
+In_L<3>        |Out_L<3>       |    8.276|
+In_L<3>        |Out_N<3>       |    7.718|
+In_L<3>        |Out_S<3>       |    8.162|
+In_L<3>        |Out_W<3>       |    8.246|
+In_L<4>        |Out_E<4>       |    8.120|
+In_L<4>        |Out_L<4>       |    8.330|
+In_L<4>        |Out_N<4>       |    8.474|
+In_L<4>        |Out_S<4>       |    7.874|
+In_L<4>        |Out_W<4>       |    7.993|
+In_L<5>        |Out_E<5>       |    7.250|
+In_L<5>        |Out_L<5>       |    8.034|
+In_L<5>        |Out_N<5>       |    7.096|
+In_L<5>        |Out_S<5>       |    7.973|
+In_L<5>        |Out_W<5>       |    7.990|
+In_L<6>        |Out_E<6>       |    8.400|
+In_L<6>        |Out_L<6>       |    8.146|
+In_L<6>        |Out_N<6>       |    8.842|
+In_L<6>        |Out_S<6>       |    7.845|
+In_L<6>        |Out_W<6>       |    8.686|
+In_L<7>        |Out_E<7>       |    8.237|
+In_L<7>        |Out_L<7>       |    8.747|
+In_L<7>        |Out_N<7>       |    8.760|
+In_L<7>        |Out_S<7>       |    8.469|
+In_L<7>        |Out_W<7>       |    8.439|
+In_N<0>        |Out_E<0>       |    7.481|
+In_N<0>        |Out_L<0>       |    7.814|
+In_N<0>        |Out_N<0>       |    7.778|
+In_N<0>        |Out_S<0>       |    8.186|
+In_N<0>        |Out_W<0>       |    8.219|
+In_N<1>        |Out_E<1>       |    6.668|
+In_N<1>        |Out_L<1>       |    7.537|
+In_N<1>        |Out_N<1>       |    6.811|
+In_N<1>        |Out_S<1>       |    6.756|
+In_N<1>        |Out_W<1>       |    6.816|
+In_N<2>        |Out_E<2>       |    6.615|
+In_N<2>        |Out_L<2>       |    8.284|
+In_N<2>        |Out_N<2>       |    7.149|
+In_N<2>        |Out_S<2>       |    7.847|
+In_N<2>        |Out_W<2>       |    7.911|
+In_N<3>        |Out_E<3>       |    7.385|
+In_N<3>        |Out_L<3>       |    8.282|
+In_N<3>        |Out_N<3>       |    7.687|
+In_N<3>        |Out_S<3>       |    7.984|
+In_N<3>        |Out_W<3>       |    8.069|
+In_N<4>        |Out_E<4>       |    7.382|
+In_N<4>        |Out_L<4>       |    7.732|
+In_N<4>        |Out_N<4>       |    7.744|
+In_N<4>        |Out_S<4>       |    7.152|
+In_N<4>        |Out_W<4>       |    7.256|
+In_N<5>        |Out_E<5>       |    7.516|
+In_N<5>        |Out_L<5>       |    8.032|
+In_N<5>        |Out_N<5>       |    7.370|
+In_N<5>        |Out_S<5>       |    7.900|
+In_N<5>        |Out_W<5>       |    7.909|
+In_N<6>        |Out_E<6>       |    7.379|
+In_N<6>        |Out_L<6>       |    7.108|
+In_N<6>        |Out_N<6>       |    7.814|
+In_N<6>        |Out_S<6>       |    7.301|
+In_N<6>        |Out_W<6>       |    8.134|
+In_N<7>        |Out_E<7>       |    7.258|
+In_N<7>        |Out_L<7>       |    7.552|
+In_N<7>        |Out_N<7>       |    7.780|
+In_N<7>        |Out_S<7>       |    6.788|
+In_N<7>        |Out_W<7>       |    6.774|
+In_W<0>        |Out_E<0>       |    7.256|
+In_W<0>        |Out_L<0>       |    7.984|
+In_W<0>        |Out_N<0>       |    7.310|
+In_W<0>        |Out_S<0>       |    7.128|
+In_W<0>        |Out_W<0>       |    6.928|
+In_W<1>        |Out_E<1>       |    6.607|
+In_W<1>        |Out_L<1>       |    6.862|
+In_W<1>        |Out_N<1>       |    6.527|
+In_W<1>        |Out_S<1>       |    6.837|
+In_W<1>        |Out_W<1>       |    6.274|
+In_W<2>        |Out_E<2>       |    7.115|
+In_W<2>        |Out_L<2>       |    7.171|
+In_W<2>        |Out_N<2>       |    7.416|
+In_W<2>        |Out_S<2>       |    6.919|
+In_W<2>        |Out_W<2>       |    6.793|
+In_W<3>        |Out_E<3>       |    7.195|
+In_W<3>        |Out_L<3>       |    6.880|
+In_W<3>        |Out_N<3>       |    7.251|
+In_W<3>        |Out_S<3>       |    6.560|
+In_W<3>        |Out_W<3>       |    6.398|
+In_W<4>        |Out_E<4>       |    7.614|
+In_W<4>        |Out_L<4>       |    7.363|
+In_W<4>        |Out_N<4>       |    7.929|
+In_W<4>        |Out_S<4>       |    7.138|
+In_W<4>        |Out_W<4>       |    7.011|
+In_W<5>        |Out_E<5>       |    7.441|
+In_W<5>        |Out_L<5>       |    7.481|
+In_W<5>        |Out_N<5>       |    7.053|
+In_W<5>        |Out_S<5>       |    7.917|
+In_W<5>        |Out_W<5>       |    7.321|
+In_W<6>        |Out_E<6>       |    7.184|
+In_W<6>        |Out_L<6>       |    6.767|
+In_W<6>        |Out_N<6>       |    7.383|
+In_W<6>        |Out_S<6>       |    6.978|
+In_W<6>        |Out_W<6>       |    7.399|
+In_W<7>        |Out_E<7>       |    7.313|
+In_W<7>        |Out_L<7>       |    6.999|
+In_W<7>        |Out_N<7>       |    7.753|
+In_W<7>        |Out_S<7>       |    6.928|
+In_W<7>        |Out_W<7>       |    6.733|
+Select_E<0>    |Out_E<0>       |    7.789|
+Select_E<0>    |Out_E<1>       |    8.589|
+Select_E<0>    |Out_E<2>       |    7.271|
+Select_E<0>    |Out_E<3>       |    7.710|
+Select_E<0>    |Out_E<4>       |    9.001|
+Select_E<0>    |Out_E<5>       |    8.080|
+Select_E<0>    |Out_E<6>       |    9.606|
+Select_E<0>    |Out_E<7>       |    8.430|
+Select_E<1>    |Out_E<0>       |    7.032|
+Select_E<1>    |Out_E<1>       |    7.989|
+Select_E<1>    |Out_E<2>       |    6.487|
+Select_E<1>    |Out_E<3>       |    7.326|
+Select_E<1>    |Out_E<4>       |    8.402|
+Select_E<1>    |Out_E<5>       |    7.051|
+Select_E<1>    |Out_E<6>       |    8.761|
+Select_E<1>    |Out_E<7>       |    7.933|
+Select_E<2>    |Out_E<0>       |    7.577|
+Select_E<2>    |Out_E<1>       |    8.382|
+Select_E<2>    |Out_E<2>       |    7.003|
+Select_E<2>    |Out_E<3>       |    7.628|
+Select_E<2>    |Out_E<4>       |    8.937|
+Select_E<2>    |Out_E<5>       |    7.565|
+Select_E<2>    |Out_E<6>       |    8.736|
+Select_E<2>    |Out_E<7>       |    8.103|
+Select_L<0>    |Out_L<0>       |    8.631|
+Select_L<0>    |Out_L<1>       |    7.839|
+Select_L<0>    |Out_L<2>       |    7.688|
+Select_L<0>    |Out_L<3>       |    7.709|
+Select_L<0>    |Out_L<4>       |    7.545|
+Select_L<0>    |Out_L<5>       |    8.437|
+Select_L<0>    |Out_L<6>       |    7.121|
+Select_L<0>    |Out_L<7>       |    7.490|
+Select_L<1>    |Out_L<0>       |    7.789|
+Select_L<1>    |Out_L<1>       |    7.508|
+Select_L<1>    |Out_L<2>       |    7.054|
+Select_L<1>    |Out_L<3>       |    7.599|
+Select_L<1>    |Out_L<4>       |    7.500|
+Select_L<1>    |Out_L<5>       |    8.071|
+Select_L<1>    |Out_L<6>       |    6.838|
+Select_L<1>    |Out_L<7>       |    6.995|
+Select_L<2>    |Out_L<0>       |    7.774|
+Select_L<2>    |Out_L<1>       |    7.036|
+Select_L<2>    |Out_L<2>       |    7.313|
+Select_L<2>    |Out_L<3>       |    7.288|
+Select_L<2>    |Out_L<4>       |    7.383|
+Select_L<2>    |Out_L<5>       |    8.168|
+Select_L<2>    |Out_L<6>       |    7.112|
+Select_L<2>    |Out_L<7>       |    7.230|
+Select_N<0>    |Out_N<0>       |    7.937|
+Select_N<0>    |Out_N<1>       |    8.166|
+Select_N<0>    |Out_N<2>       |    7.720|
+Select_N<0>    |Out_N<3>       |    8.024|
+Select_N<0>    |Out_N<4>       |    8.946|
+Select_N<0>    |Out_N<5>       |    7.716|
+Select_N<0>    |Out_N<6>       |    9.177|
+Select_N<0>    |Out_N<7>       |    9.079|
+Select_N<1>    |Out_N<0>       |    6.961|
+Select_N<1>    |Out_N<1>       |    7.542|
+Select_N<1>    |Out_N<2>       |    6.695|
+Select_N<1>    |Out_N<3>       |    7.096|
+Select_N<1>    |Out_N<4>       |    7.987|
+Select_N<1>    |Out_N<5>       |    6.645|
+Select_N<1>    |Out_N<6>       |    8.234|
+Select_N<1>    |Out_N<7>       |    7.732|
+Select_N<2>    |Out_N<0>       |    7.816|
+Select_N<2>    |Out_N<1>       |    6.877|
+Select_N<2>    |Out_N<2>       |    7.998|
+Select_N<2>    |Out_N<3>       |    7.308|
+Select_N<2>    |Out_N<4>       |    7.570|
+Select_N<2>    |Out_N<5>       |    7.713|
+Select_N<2>    |Out_N<6>       |    7.471|
+Select_N<2>    |Out_N<7>       |    7.388|
+Select_S<0>    |Out_S<0>       |    8.245|
+Select_S<0>    |Out_S<1>       |    7.490|
+Select_S<0>    |Out_S<2>       |    7.790|
+Select_S<0>    |Out_S<3>       |    7.418|
+Select_S<0>    |Out_S<4>       |    7.834|
+Select_S<0>    |Out_S<5>       |    7.866|
+Select_S<0>    |Out_S<6>       |    7.374|
+Select_S<0>    |Out_S<7>       |    7.145|
+Select_S<1>    |Out_S<0>       |    7.734|
+Select_S<1>    |Out_S<1>       |    7.437|
+Select_S<1>    |Out_S<2>       |    7.765|
+Select_S<1>    |Out_S<3>       |    6.964|
+Select_S<1>    |Out_S<4>       |    7.580|
+Select_S<1>    |Out_S<5>       |    7.552|
+Select_S<1>    |Out_S<6>       |    6.994|
+Select_S<1>    |Out_S<7>       |    6.989|
+Select_S<2>    |Out_S<0>       |    8.094|
+Select_S<2>    |Out_S<1>       |    7.366|
+Select_S<2>    |Out_S<2>       |    7.821|
+Select_S<2>    |Out_S<3>       |    7.276|
+Select_S<2>    |Out_S<4>       |    7.817|
+Select_S<2>    |Out_S<5>       |    7.451|
+Select_S<2>    |Out_S<6>       |    7.089|
+Select_S<2>    |Out_S<7>       |    7.107|
+Select_W<0>    |Out_W<0>       |    7.687|
+Select_W<0>    |Out_W<1>       |    7.782|
+Select_W<0>    |Out_W<2>       |    7.673|
+Select_W<0>    |Out_W<3>       |    7.090|
+Select_W<0>    |Out_W<4>       |    7.552|
+Select_W<0>    |Out_W<5>       |    7.692|
+Select_W<0>    |Out_W<6>       |    8.118|
+Select_W<0>    |Out_W<7>       |    7.256|
+Select_W<1>    |Out_W<0>       |    7.202|
+Select_W<1>    |Out_W<1>       |    6.832|
+Select_W<1>    |Out_W<2>       |    7.235|
+Select_W<1>    |Out_W<3>       |    6.919|
+Select_W<1>    |Out_W<4>       |    7.014|
+Select_W<1>    |Out_W<5>       |    7.072|
+Select_W<1>    |Out_W<6>       |    7.805|
+Select_W<1>    |Out_W<7>       |    6.939|
+Select_W<2>    |Out_W<0>       |    7.671|
+Select_W<2>    |Out_W<1>       |    7.849|
+Select_W<2>    |Out_W<2>       |    7.599|
+Select_W<2>    |Out_W<3>       |    7.906|
+Select_W<2>    |Out_W<4>       |    7.828|
+Select_W<2>    |Out_W<5>       |    7.707|
+Select_W<2>    |Out_W<6>       |    8.764|
+Select_W<2>    |Out_W<7>       |    7.552|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Nov 27 12:54:57 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4951 MB
+
+
+
