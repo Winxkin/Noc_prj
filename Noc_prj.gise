@@ -55,9 +55,7 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="FIFO_Buffer_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="FIFO_Buffer_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FIFO_Buffer_xst.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIFO_buffer_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FIFO_buffer_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FIFO_buffer_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIFO_buffer_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -102,6 +100,12 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="input_flow_control.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="input_flow_control.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="input_flow_control.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="input_flow_control_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="input_flow_control_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="input_flow_control_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="input_flow_control_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="input_flow_control_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="input_flow_control_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="input_flow_control_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -115,74 +119,71 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1669528054" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1669528054">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1669541478" xil_pn:in_ck="5557628941822630205" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1669541478">
+    <transform xil_pn:end_ts="1669643223" xil_pn:in_ck="2415684752465107805" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1669643223">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FIFO_Buffer.v"/>
       <outfile xil_pn:name="FIFO_buffer_tb.v"/>
       <outfile xil_pn:name="crossbar.v"/>
       <outfile xil_pn:name="crossbar_tb.v"/>
       <outfile xil_pn:name="input_flow_control.v"/>
+      <outfile xil_pn:name="input_flow_control_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1669535312" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4196940838476974153" xil_pn:start_ts="1669535312">
+    <transform xil_pn:end_ts="1669642522" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7012958124953884685" xil_pn:start_ts="1669642522">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1669535312" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2840569799925647335" xil_pn:start_ts="1669535312">
+    <transform xil_pn:end_ts="1669642522" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5748659195435497105" xil_pn:start_ts="1669642522">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1669535294" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5172964318349994886" xil_pn:start_ts="1669535294">
+    <transform xil_pn:end_ts="1669641904" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8917748701151754468" xil_pn:start_ts="1669641904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1669541478" xil_pn:in_ck="5557628941822630205" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1669541478">
+    <transform xil_pn:end_ts="1669643223" xil_pn:in_ck="2415684752465107805" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1669643223">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FIFO_Buffer.v"/>
       <outfile xil_pn:name="FIFO_buffer_tb.v"/>
       <outfile xil_pn:name="crossbar.v"/>
       <outfile xil_pn:name="crossbar_tb.v"/>
       <outfile xil_pn:name="input_flow_control.v"/>
+      <outfile xil_pn:name="input_flow_control_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1669541480" xil_pn:in_ck="5557628941822630205" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5301501528059199327" xil_pn:start_ts="1669541478">
+    <transform xil_pn:end_ts="1669643226" xil_pn:in_ck="2415684752465107805" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6821477938894186315" xil_pn:start_ts="1669643223">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="FIFO_buffer_tb_beh.prj"/>
-      <outfile xil_pn:name="FIFO_buffer_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="input_flow_control_tb_beh.prj"/>
+      <outfile xil_pn:name="input_flow_control_tb_isim_beh.exe"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1669541480" xil_pn:in_ck="-6867434844582816720" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1679743282476068132" xil_pn:start_ts="1669541480">
+    <transform xil_pn:end_ts="1669643226" xil_pn:in_ck="-6934821239770296549" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3056229731368325272" xil_pn:start_ts="1669643226">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="FIFO_buffer_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="input_flow_control_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1669526931" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1669526931">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1669541107" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5876502750027189697" xil_pn:start_ts="1669541107">
       <status xil_pn:value="SuccessfullyRun"/>

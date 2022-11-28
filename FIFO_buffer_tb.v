@@ -86,10 +86,10 @@ module FIFO_buffer_tb;
 		Data_in = 10;
 		#20
 		Data_in = 11;
-		//#30
-		//write = 0;
-		//#20
-		//read = 1;
+		#30
+		write = 0;
+		#20
+		read = 1;
 		
 	end
 	

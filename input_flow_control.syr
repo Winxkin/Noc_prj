@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: input_flow_control.prj
 
@@ -113,7 +113,6 @@ Parsing module <input_flow_control>.
 =========================================================================
 
 Elaborating module <input_flow_control>.
-WARNING:HDLCompiler:1499 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\input_flow_control.v" Line 21: Empty module <input_flow_control> remains a black box.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,7 +120,6 @@ WARNING:HDLCompiler:1499 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\input_flow_control.
 
 Synthesizing Unit <input_flow_control>.
     Related source file is "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\input_flow_control.v".
-        DATA_WIDTH = 8
     Summary:
 	no macro.
 Unit <input_flow_control> synthesized.
@@ -180,6 +178,11 @@ Top Level Output File Name         : input_flow_control.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
+# BELS                             : 1
+#      LUT2                        : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
 
 Device utilization summary:
 ---------------------------
@@ -188,17 +191,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
+ Number of Slice LUTs:                    1  out of  63400     0%  
+    Number used as Logic:                 1  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
+ Number of LUT Flip Flop pairs used:      1
+   Number with an unused Flip Flop:       1  out of      1   100%  
+   Number with an unused LUT:             0  out of      1     0%  
+   Number of fully used LUT-FF pairs:     0  out of      1     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           0
- Number of bonded IOBs:                   0  out of    210     0%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    210     1%  
 
 Specific Feature Utilization:
 
@@ -233,11 +238,30 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 0.761ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               0.761ns (Levels of Logic = 3)
+  Source:            full (PAD)
+  Destination:       ret (PAD)
+
+  Data Path: full to ret
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.379  full_IBUF (full_IBUF)
+     LUT2:I0->O            2   0.097   0.283  ret1 (write_OBUF)
+     OBUF:I->O                 0.000          ret_OBUF (ret)
+    ----------------------------------------
+    Total                      0.761ns (0.098ns logic, 0.663ns route)
+                                       (12.9% logic, 87.1% route)
 
 =========================================================================
 
@@ -247,14 +271,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.95 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.15 secs
  
 --> 
 
-Total memory usage is 4676864 kilobytes
+Total memory usage is 4676992 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
