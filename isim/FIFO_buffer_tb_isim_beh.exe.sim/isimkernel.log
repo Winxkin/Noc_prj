@@ -1,0 +1,28 @@
+Command line:
+   FIFO_buffer_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51262
+
+Thu Dec 01 13:28:04 2022
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5811.77 Meg
+
+ Total Signals          : 25
+ Total Nets             : 36
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 348
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 4710.76 Meg
+
+Thu Dec 01 13:41:06 2022
+

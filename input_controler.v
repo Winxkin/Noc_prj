@@ -16,17 +16,72 @@
 // Revision: 
 // Revision 0.01 - File Created
 // Additional Comments: 
-// check : not yet
+// check : ok
 //////////////////////////////////////////////////////////////////////////////////
 module input_controler
 #(parameter DATA_WIDTH = 8,
-  parameter N_REQ = 4)
-(input [DATA_WIDTH-1:0] Data_in,
+  parameter N_REGISTER = 3,
+  parameter N_ADD = 2)
+(input [N_ADD-1:0] X_cur,Y_cur,
+ input [DATA_WIDTH-1:0] Data_in,
  output reg [DATA_WIDTH-1:0] Data_out,
- input empty,grant,
- output read,
- output [N_REQ-1:0] req
+ input empty,
+ input clk,rst,
+ output wire read,
+ output reg [N_REGISTER-1:0] register
  );
-
+ 
+reg [N_ADD-1:0] x_add_cur,y_add_cur;
+reg [DATA_WIDTH-1:0] data_reg;
+reg [N_ADD-1:0] x_add_des,y_add_des;
+reg [N_REGISTER-1:0] not_register = 3'b111;
+	
+always@(posedge clk, posedge rst)
+	begin
+		if(rst)
+			begin
+				x_add_cur = X_cur;
+				y_add_cur = Y_cur;
+				Data_out = 0;
+				register = not_register;
+			end
+		else
+			begin
+				if(!empty)
+				begin
+					data_reg = Data_in;
+					x_add_des = {data_reg[1],data_reg[0]}; //get x_des address
+					y_add_des = {data_reg[3],data_reg[2]}; //get y_des address
+					Data_out = data_reg;
+					/*XY routing*/
+					if(x_add_des == x_add_cur)
+						begin
+							if(y_add_des == y_add_cur)
+								register = 3'b000; /*output = local*/
+							else
+								begin
+									if(y_add_des > y_add_cur)
+										register = 3'b011; /*output = N top*/
+									if(y_add_des < y_add_cur)
+										register = 3'b100; /*output = S bottom*/
+								end
+						end
+					else
+						begin
+							if(x_add_des > x_add_cur)
+								register = 3'b001; /*output = E ->*/
+							if(x_add_des < x_add_cur)
+								register = 3'b010; /*output = W <-*/
+						end
+				end
+				else
+					begin
+						Data_out = 0;
+						register = not_register;
+					end
+			end
+	end
+	
+assign read = (rst == 0 && empty == 0) ? 1'b1 : 1'b0;
 
 endmodule

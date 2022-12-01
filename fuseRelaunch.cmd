@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/input_flow_control_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/input_flow_control_tb_beh.prj" "work.input_flow_control_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/input_controler_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/input_controler_tb_beh.prj" "work.input_controler_tb" "work.glbl" 

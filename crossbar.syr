@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: crossbar.prj
 
@@ -113,6 +113,11 @@ Parsing module <crossbar>.
 =========================================================================
 
 Elaborating module <crossbar>.
+WARNING:HDLCompiler:295 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v" Line 45: case condition never applies
+WARNING:HDLCompiler:295 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v" Line 54: case condition never applies
+WARNING:HDLCompiler:295 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v" Line 63: case condition never applies
+WARNING:HDLCompiler:295 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v" Line 72: case condition never applies
+WARNING:HDLCompiler:295 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v" Line 81: case condition never applies
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,11 +126,13 @@ Elaborating module <crossbar>.
 Synthesizing Unit <crossbar>.
     Related source file is "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\crossbar.v".
         DATA_WIDTH = 8
-    Found 8-bit 7-to-1 multiplexer for signal <Out_L> created at line 39.
-    Found 8-bit 7-to-1 multiplexer for signal <Out_N> created at line 48.
-    Found 8-bit 7-to-1 multiplexer for signal <Out_W> created at line 57.
-    Found 8-bit 7-to-1 multiplexer for signal <Out_S> created at line 66.
-    Found 8-bit 7-to-1 multiplexer for signal <Out_E> created at line 75.
+        N_BIT_SEL = 2
+WARNING:Xst:647 - Input <In_W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit 4-to-1 multiplexer for signal <Out_L> created at line 40.
+    Found 8-bit 4-to-1 multiplexer for signal <Out_N> created at line 49.
+    Found 8-bit 4-to-1 multiplexer for signal <Out_W> created at line 58.
+    Found 8-bit 4-to-1 multiplexer for signal <Out_S> created at line 67.
+    Found 8-bit 4-to-1 multiplexer for signal <Out_E> created at line 76.
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <crossbar> synthesized.
@@ -135,7 +142,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 5
- 8-bit 7-to-1 multiplexer                              : 5
+ 8-bit 4-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -149,7 +156,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 5
- 8-bit 7-to-1 multiplexer                              : 5
+ 8-bit 4-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -190,11 +197,10 @@ Top Level Output File Name         : crossbar.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 80
-#      LUT5                        : 40
+# BELS                             : 40
 #      LUT6                        : 40
-# IO Buffers                       : 95
-#      IBUF                        : 55
+# IO Buffers                       : 82
+#      IBUF                        : 42
 #      OBUF                        : 40
 
 Device utilization summary:
@@ -204,19 +210,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   80  out of  63400     0%  
-    Number used as Logic:                80  out of  63400     0%  
+ Number of Slice LUTs:                   40  out of  63400     0%  
+    Number used as Logic:                40  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     80
-   Number with an unused Flip Flop:      80  out of     80   100%  
-   Number with an unused LUT:             0  out of     80     0%  
-   Number of fully used LUT-FF pairs:     0  out of     80     0%  
+ Number of LUT Flip Flop pairs used:     40
+   Number with an unused Flip Flop:      40  out of     40   100%  
+   Number with an unused LUT:             0  out of     40     0%  
+   Number of fully used LUT-FF pairs:     0  out of     40     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          95
- Number of bonded IOBs:                  95  out of    210    45%  
+ Number of IOs:                          90
+ Number of bonded IOBs:                  82  out of    210    39%  
 
 Specific Feature Utilization:
 
@@ -251,7 +257,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 1.531ns
+   Maximum combinational path delay: 1.103ns
 
 Timing Details:
 ---------------
@@ -259,9 +265,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 400 / 40
+  Total number of paths / destination ports: 240 / 40
 -------------------------------------------------------------------------
-Delay:               1.531ns (Levels of Logic = 4)
+Delay:               1.103ns (Levels of Logic = 3)
   Source:            Select_L<0> (PAD)
   Destination:       Out_L<7> (PAD)
 
@@ -269,13 +275,12 @@ Delay:               1.531ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   0.001   0.762  Select_L_0_IBUF (Select_L_0_IBUF)
-     LUT6:I0->O            1   0.097   0.295  Mmux_Out_L11 (Mmux_Out_L1)
-     LUT5:I4->O            1   0.097   0.279  Mmux_Out_L12 (Out_L_0_OBUF)
+     IBUF:I->O             8   0.001   0.725  Select_L_0_IBUF (Select_L_0_IBUF)
+     LUT6:I0->O            1   0.097   0.279  Mmux_Out_L11 (Out_L_0_OBUF)
      OBUF:I->O                 0.000          Out_L_0_OBUF (Out_L<0>)
     ----------------------------------------
-    Total                      1.531ns (0.195ns logic, 1.336ns route)
-                                       (12.7% logic, 87.3% route)
+    Total                      1.103ns (0.098ns logic, 1.005ns route)
+                                       (8.9% logic, 91.1% route)
 
 =========================================================================
 
@@ -285,14 +290,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.13 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.57 secs
  
 --> 
 
-Total memory usage is 4690624 kilobytes
+Total memory usage is 4690180 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
