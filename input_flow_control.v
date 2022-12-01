@@ -25,5 +25,5 @@ module input_flow_control
 
 	
 assign write = (full == 0 && val == 1)? 1'b1 : 1'b0;
-assign ret = (write == 1)? 1'b1 : 1'b0;
+assign ret = full;
 endmodule

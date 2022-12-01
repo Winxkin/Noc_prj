@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Thu Dec 01 16:08:18 2022">
+  <application stringID="Xst" timeStamp="Thu Dec 01 23:31:17 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -158,15 +158,15 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="block_input.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="28">
+        <item dataType="int" stringID="XST_BELS" value="27">
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="2"/>
-          <item dataType="int" stringID="XST_LUT2" value="13"/>
+          <item dataType="int" stringID="XST_LUT2" value="12"/>
           <item dataType="int" stringID="XST_LUT3" value="2"/>
-          <item dataType="int" stringID="XST_LUT4" value="1"/>
+          <item dataType="int" stringID="XST_LUT4" value="2"/>
           <item dataType="int" stringID="XST_LUT5" value="2"/>
           <item dataType="int" stringID="XST_LUT6" value="5"/>
-          <item dataType="int" stringID="XST_MUXF7" value="2"/>
+          <item dataType="int" stringID="XST_MUXF7" value="1"/>
         </item>
         <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="21">
           <item dataType="int" stringID="XST_FDC" value="8"/>
@@ -179,8 +179,8 @@
           <item dataType="int" label="-bufg" stringID="XST_BUFG" value="1"/>
           <item dataType="int" stringID="XST_BUFGP" value="1"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="26">
-          <item dataType="int" stringID="XST_IBUF" value="14"/>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="27">
+          <item dataType="int" stringID="XST_IBUF" value="15"/>
           <item dataType="int" stringID="XST_OBUF" value="12"/>
         </item>
       </section>
@@ -196,8 +196,8 @@
       <item AVAILABLE="33" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
       <item AVAILABLE="33" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="17"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="6"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="27"/>
-      <item AVAILABLE="210" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="27"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="28"/>
+      <item AVAILABLE="210" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="28"/>
       <item dataType="int" label="IOB Flip Flops/Latches" stringID="XST_IOB_FLIP_FLOPSLATCHES" value="4"/>
       <item AVAILABLE="32" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="2"/>
     </section>
