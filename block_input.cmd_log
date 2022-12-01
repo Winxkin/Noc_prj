@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 block_input.ngc block_input.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o block_input_map.ncd block_input.ngd block_input.pcf 
+par -w -intstyle ise -ol high -mt off block_input_map.ncd block_input.ncd block_input.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml block_input.twx block_input.ncd -o block_input.twr block_input.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 block_input.ngc block_input.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o block_input_map.ncd block_input.ngd block_input.pcf 
+par -w -intstyle ise -ol high -mt off block_input_map.ncd block_input.ncd block_input.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml block_input.twx block_input.ncd -o block_input.twr block_input.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 block_input.ngc block_input.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o block_input_map.ncd block_input.ngd block_input.pcf 
+par -w -intstyle ise -ol high -mt off block_input_map.ncd block_input.ncd block_input.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml block_input.twx block_input.ncd -o block_input.twr block_input.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 block_input.ngc block_input.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o block_input_map.ncd block_input.ngd block_input.pcf 
+par -w -intstyle ise -ol high -mt off block_input_map.ncd block_input.ncd block_input.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml block_input.twx block_input.ncd -o block_input.twr block_input.pcf 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+xst -intstyle ise -ifn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.xst" -ofn "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 block_input.ngc block_input.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o block_input_map.ncd block_input.ngd block_input.pcf 
+par -w -intstyle ise -ol high -mt off block_input_map.ncd block_input.ncd block_input.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml block_input.twx block_input.ncd -o block_input.twr block_input.pcf 

@@ -20,14 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 module FIFO_Buffer
 #(parameter DATA_WIDTH = 8,
-  parameter ADD_BIT = 4) //2^3 array fifo
+  parameter ADD_BIT = 2) /*2^ADD_BIT = 4 => FIFO[3:0]*/
 (input [DATA_WIDTH-1:0] Data_in,
  input clk, rst, write, read,
  output [DATA_WIDTH-1:0] Data_out,
  output empty, full
  );
  
- reg [DATA_WIDTH-1:0] fifo[2**ADD_BIT-1:0];
+ reg [DATA_WIDTH-1:0] fifo[2**ADD_BIT-1:0]; 
  reg [ADD_BIT-1:0] rd_ptr_reg, rd_ptr_next, rd_ptr_succ;
  reg [ADD_BIT-1:0] wr_ptr_reg, wr_ptr_next, wr_ptr_succ;
  reg full_reg, full_next, empty_reg, empty_next;
