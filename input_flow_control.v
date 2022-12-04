@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: HCMUTE
+// Engineer: Huan Nguyen Duy
 // 
 // Create Date:    14:32:46 11/27/2022 
 // Design Name: 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: input_controler.prj
 
@@ -113,7 +113,6 @@ Parsing module <input_controler>.
 =========================================================================
 
 Elaborating module <input_controler>.
-WARNING:HDLCompiler:872 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\input_controler.v" Line 37: Using initial value of not_register since it is never assigned
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -402,13 +401,13 @@ rst            |         |    2.667|         |         |
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.12 secs
+Total CPU time to Xst completion: 5.15 secs
  
 --> 
 
-Total memory usage is 4690624 kilobytes
+Total memory usage is 4690304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

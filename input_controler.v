@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: HCMUTE
+// Engineer: Huan Nguyen Duy
 // 
 // Create Date:    20:49:12 11/28/2022 
 // Design Name: 
@@ -25,7 +25,7 @@ module input_controler
 (input [N_ADD-1:0] X_cur,Y_cur,
  input [DATA_WIDTH-1:0] Data_in,
  output reg [DATA_WIDTH-1:0] Data_out,
- input empty,s_ack,
+ input empty,
  input clk,rst,
  output wire read,
  output reg [N_REGISTER-1:0] register
@@ -34,7 +34,7 @@ module input_controler
 reg [N_ADD-1:0] x_add_cur,y_add_cur;
 reg [DATA_WIDTH-1:0] data_reg;
 reg [N_ADD-1:0] x_add_des,y_add_des;
-reg [N_REGISTER-1:0] not_register = 3'b111;
+localparam [N_REGISTER-1:0] not_register = 3'b111;
 	
 always@(posedge clk, posedge rst)
 	begin
@@ -82,6 +82,6 @@ always@(posedge clk, posedge rst)
 			end
 	end
 	
-assign read = (rst == 0 && empty == 0 && s_ack==1) ? 1'b1 : 1'b0;
+assign read = (rst == 0 && empty == 0) ? 1'b1 : 1'b0;
 
 endmodule

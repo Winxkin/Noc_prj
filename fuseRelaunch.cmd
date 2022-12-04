@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input_tb_beh.prj" "work.block_input_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/switch_atriber_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/switch_atriber_tb_beh.prj" "work.switch_atriber_tb" "work.glbl" 

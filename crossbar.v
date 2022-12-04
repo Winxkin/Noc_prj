@@ -27,7 +27,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module crossbar
 #(parameter DATA_WIDTH = 8,
-  parameter N_BIT_SEL = 2)
+  parameter N_BIT_SEL = 3)
 (input [DATA_WIDTH-1:0] In_L, In_N, In_E, In_W, In_S,
  output reg [DATA_WIDTH-1:0] Out_L, Out_N, Out_E, Out_W, Out_S,
  input[N_BIT_SEL-1:0] Select_L, Select_N,Select_E, Select_W, Select_S

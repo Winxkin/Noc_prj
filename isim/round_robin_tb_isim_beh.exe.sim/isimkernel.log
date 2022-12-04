@@ -1,0 +1,28 @@
+Command line:
+   round_robin_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50788
+
+Sat Dec 03 23:16:07 2022
+
+
+ Elaboration Time: 0.234375 sec
+
+ Current Memory Usage: 5810.72 Meg
+
+ Total Signals          : 22
+ Total Nets             : 36
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 19
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 221
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 5338.86 Meg
+
+Sat Dec 03 23:17:31 2022
+

@@ -31,7 +31,6 @@ module block_input_tb;
 	reg rst;
 	reg val;
 	reg [7:0] Data_in;
-   reg s_ack;
 	// Outputs
 	wire ret;
 	wire [7:0] Data_out;
@@ -47,8 +46,7 @@ module block_input_tb;
 		.ret(ret), 
 		.Data_in(Data_in), 
 		.Data_out(Data_out), 
-		.register(register),
-		.s_ack(s_ack)
+		.register(register)
 	);
 
 	initial begin
@@ -59,7 +57,6 @@ module block_input_tb;
 		rst = 0;
 		val = 0;
 		Data_in = 0;
-      s_ack = 0;
 		// Wait 100 ns for global reset to finish
 		#100;
 		rst = 1;
@@ -73,8 +70,6 @@ module block_input_tb;
 		Data_in = 8'b11111010;
 		#20
 		Data_in = 8'b11111000;
-		#20
-		s_ack = 1;
 		#20
 		Data_in = 8'b11110000; /*package correct address*/
       #20

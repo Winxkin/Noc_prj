@@ -1,0 +1,28 @@
+Command line:
+   switch_atrivber_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50113
+
+Sun Dec 04 15:07:26 2022
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 5810.72 Meg
+
+ Total Signals          : 25
+ Total Nets             : 45
+ Total Signal Drivers   : 17
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 257
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 4867 Meg
+
+Sun Dec 04 15:09:31 2022
+

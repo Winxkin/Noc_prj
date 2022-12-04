@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: block_input.prj
 
@@ -127,7 +127,6 @@ WARNING:HDLCompiler:413 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\FIFO_Buffer.v" Line 
 WARNING:HDLCompiler:413 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\FIFO_Buffer.v" Line 75: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <input_controler>.
-WARNING:HDLCompiler:872 - "D:\LuanVan\Xlinx\Noc_prj\Noc_prj\input_controler.v" Line 37: Using initial value of not_register since it is never assigned
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -311,15 +310,15 @@ Top Level Output File Name         : block_input.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 27
+# BELS                             : 28
 #      GND                         : 1
 #      INV                         : 2
-#      LUT2                        : 12
+#      LUT2                        : 13
 #      LUT3                        : 2
-#      LUT4                        : 2
+#      LUT4                        : 1
 #      LUT5                        : 2
 #      LUT6                        : 5
-#      MUXF7                       : 1
+#      MUXF7                       : 2
 # FlipFlops/Latches                : 21
 #      FDC                         : 8
 #      FDCE                        : 5
@@ -332,8 +331,8 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 27
-#      IBUF                        : 15
+# IO Buffers                       : 26
+#      IBUF                        : 14
 #      OBUF                        : 12
 
 Device utilization summary:
@@ -357,8 +356,8 @@ Slice Logic Distribution:
    Number of unique control sets:         6
 
 IO Utilization: 
- Number of IOs:                          28
- Number of bonded IOBs:                  28  out of    210    13%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    210    12%  
     IOB Flip Flops/Latches:               4
 
 Specific Feature Utilization:
@@ -398,7 +397,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 2.320ns (Maximum Frequency: 431.109MHz)
-   Minimum input arrival time before clock: 1.612ns
+   Minimum input arrival time before clock: 1.563ns
    Maximum output required time after clock: 0.663ns
    Maximum combinational path delay: No path found
 
@@ -409,46 +408,46 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 2.320ns (frequency: 431.109MHz)
-  Total number of paths / destination ports: 122 / 36
+  Total number of paths / destination ports: 124 / 36
 -------------------------------------------------------------------------
 Delay:               2.320ns (Levels of Logic = 2)
   Source:            BUFFER/Mram_fifo1 (RAM)
-  Destination:       IC/register_1 (FF)
+  Destination:       RC/register_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: BUFFER/Mram_fifo1 to IC/register_1
+  Data Path: BUFFER/Mram_fifo1 to RC/register_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAM32M:WCLK->DOA0     4   1.345   0.393  BUFFER/Mram_fifo1 (Data_bus<0>)
-     LUT5:I3->O            1   0.097   0.379  IC/Mmux_PWR_4_o_register[2]_mux_13_OUT121_SW0 (N6)
-     LUT6:I4->O            1   0.097   0.000  IC/Mmux_PWR_4_o_register[2]_mux_13_OUT21 (IC/PWR_4_o_register[2]_mux_13_OUT<1>)
-     FDP:D                     0.008          IC/register_1
+     LUT5:I3->O            1   0.097   0.379  RC/Mmux_PWR_4_o_register[2]_mux_13_OUT121_SW0 (N6)
+     LUT6:I4->O            1   0.097   0.000  RC/Mmux_PWR_4_o_register[2]_mux_13_OUT21 (RC/PWR_4_o_register[2]_mux_13_OUT<1>)
+     FDP:D                     0.008          RC/register_1
     ----------------------------------------
     Total                      2.320ns (1.547ns logic, 0.773ns route)
                                        (66.7% logic, 33.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 43 / 36
+  Total number of paths / destination ports: 40 / 36
 -------------------------------------------------------------------------
-Offset:              1.612ns (Levels of Logic = 3)
-  Source:            s_ack (PAD)
+Offset:              1.563ns (Levels of Logic = 3)
+  Source:            rst (PAD)
   Destination:       BUFFER/full_reg (FF)
   Destination Clock: clk rising
 
-  Data Path: s_ack to BUFFER/full_reg
+  Data Path: rst to BUFFER/full_reg
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.515  s_ack_IBUF (s_ack_IBUF)
-     LUT3:I0->O            3   0.097   0.289  IC/read1 (read_wire)
+     IBUF:I->O            20   0.001   0.467  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            3   0.097   0.289  RC/read1 (read_wire)
      MUXF7:S->O            1   0.335   0.279  BUFFER/_n0094_inv1 (BUFFER/_n0094_inv)
      FDCE:CE                   0.095          BUFFER/full_reg
     ----------------------------------------
-    Total                      1.612ns (0.528ns logic, 1.084ns route)
-                                       (32.8% logic, 67.2% route)
+    Total                      1.563ns (0.528ns logic, 1.035ns route)
+                                       (33.8% logic, 66.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'rst'
@@ -456,15 +455,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'rst'
 -------------------------------------------------------------------------
 Offset:              0.280ns (Levels of Logic = 1)
   Source:            Y_cur<0> (PAD)
-  Destination:       IC/y_add_cur_0 (LATCH)
+  Destination:       RC/y_add_cur_0 (LATCH)
   Destination Clock: rst falling
 
-  Data Path: Y_cur<0> to IC/y_add_cur_0
+  Data Path: Y_cur<0> to RC/y_add_cur_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.001   0.279  Y_cur_0_IBUF (Y_cur_0_IBUF)
-     LD:D                     -0.028          IC/y_add_cur_0
+     LD:D                     -0.028          RC/y_add_cur_0
     ----------------------------------------
     Total                      0.280ns (0.001ns logic, 0.279ns route)
                                        (0.4% logic, 99.6% route)
@@ -505,14 +504,14 @@ rst            |         |    1.746|         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.55 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.22 secs
  
 --> 
 
-Total memory usage is 4690304 kilobytes
+Total memory usage is 4690624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 
