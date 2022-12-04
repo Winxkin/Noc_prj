@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-12-04T15:24:27</DateModified>
-  <ModuleName>switch</ModuleName>
+  <DateModified>2022-12-04T19:02:18</DateModified>
+  <ModuleName>block_input</ModuleName>
   <SummaryTimeStamp>2022-12-03T17:29:57</SummaryTimeStamp>
   <SavedFilePath>D:/LuanVan/Xlinx/Noc_prj/Noc_prj/iseconfig/block_input.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/LuanVan/Xlinx/Noc_prj/Noc_prj\</ImplementationReportsDirectory>

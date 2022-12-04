@@ -1,4 +1,0 @@
-verilog work "input_flow_control.v"
-verilog work "input_controler.v"
-verilog work "FIFO_Buffer.v"
-verilog work "block_input.v"
