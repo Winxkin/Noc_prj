@@ -31,6 +31,7 @@ module block_input_tb;
 	reg rst;
 	reg val;
 	reg [7:0] Data_in;
+	reg grant;
 	// Outputs
 	wire ret;
 	wire [7:0] Data_out;
@@ -46,7 +47,8 @@ module block_input_tb;
 		.ret(ret), 
 		.Data_in(Data_in), 
 		.Data_out(Data_out), 
-		.register(register)
+		.register(register),
+		.grant(grant)
 	);
 
 	initial begin
@@ -57,13 +59,14 @@ module block_input_tb;
 		rst = 0;
 		val = 0;
 		Data_in = 0;
+		grant = 0;
 		// Wait 100 ns for global reset to finish
 		#100;
 		rst = 1;
 		#20
 		rst = 0;
 		#10
-		Data_in = 8'b10101111;
+		Data_in = 8'b10101110;
 		#50
 		val = 1; /*request sent package to router*/
 		#20
@@ -71,11 +74,13 @@ module block_input_tb;
 		#20
 		Data_in = 8'b11111000;
 		#20
-		Data_in = 8'b11110000; /*package correct address*/
+		Data_in = 8'b11110010; /*package correct address*/
       #20
-		Data_in = 8'b10110000;
+		Data_in = 8'b10111000;
 		#20
 		val = 0;
+		#20;
+		grant = 1;
 		
 		// Add stimulus here
 

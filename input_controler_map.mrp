@@ -10,12 +10,12 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sun Dec 04 16:51:49 2022
+Mapped Date    : Sun Dec 04 17:52:33 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   29
+Number of warnings:   30
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of 126,800    0%
   Number of Slice LUTs:                          9 out of  63,400    1%
@@ -28,7 +28,7 @@ Slice Logic Utilization:
     Number used exclusively as route-thrus:      0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     5 out of  15,850    1%
+  Number of occupied Slices:                     7 out of  15,850    1%
   Number of LUT Flip Flop pairs used:            9
     Number with an unused Flip Flop:             9 out of       9  100%
     Number with an unused LUT:                   0 out of       9    0%
@@ -45,7 +45,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        27 out of     210   12%
+  Number of bonded IOBs:                        28 out of     210   13%
     IOB Flip Flops:                             11
     IOB Latches:                                 4
 
@@ -88,11 +88,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.45
+Average Fanout of Non-Clock Nets:                1.44
 
-Peak Memory Usage:  4967 MB
-Total REAL time to MAP completion:  14 secs 
-Total CPU time to MAP completion:   14 secs 
+Peak Memory Usage:  4957 MB
+Total REAL time to MAP completion:  16 secs 
+Total CPU time to MAP completion:   16 secs 
 
 Table of Contents
 -----------------
@@ -183,6 +183,11 @@ WARNING:PhysDesignRules:2452 - The IOB Data_in<3> is either not constrained
    (IOSTANDARD). This condition may seriously affect the device and will be an
    error in bitstream creation. It should be corrected by properly specifying
    the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB grant is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB Data_in<4> is either not constrained
    (LOC) to a specific location and/or has an undefined I/O Standard
    (IOSTANDARD). This condition may seriously affect the device and will be an
@@ -302,6 +307,7 @@ Section 6 - IOB Properties
 | Y_cur<1>                           | IOB              | INPUT     | LVCMOS18             |       |          |      | ILATCH       |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
 | empty                              | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| grant                              | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
 | read                               | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | register<0>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OFF          |          |          |
 | register<1>                        | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OFF          |          |          |

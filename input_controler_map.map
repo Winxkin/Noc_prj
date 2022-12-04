@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sun Dec 04 16:51:49 2022
+Mapped Date    : Sun Dec 04 17:52:33 2022
 
 WARNING:LIT:701 - PAD symbol "rst" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "rst" is not constrained (LOC) to a specific
@@ -22,53 +22,53 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 11 secs 
-Total CPU  time at the beginning of Placer: 11 secs 
+Total REAL time at the beginning of Placer: 13 secs 
+Total CPU  time at the beginning of Placer: 13 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:768) REAL time: 12 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:7a6) REAL time: 14 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:768) REAL time: 12 secs 
+Phase 2.7  Design Feasibility Check (Checksum:7a6) REAL time: 14 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:768) REAL time: 12 secs 
+Phase 3.31  Local Placement Optimization (Checksum:7a6) REAL time: 14 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 .....
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:7a42624b) REAL time: 13 secs 
+(Checksum:d119b4d5) REAL time: 15 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:7a42624b) REAL time: 13 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:d119b4d5) REAL time: 15 secs 
 
 Phase 6.3  Local Placement Optimization
-......
-Phase 6.3  Local Placement Optimization (Checksum:c9dfcd56) REAL time: 13 secs 
+.....
+Phase 6.3  Local Placement Optimization (Checksum:bd932db7) REAL time: 15 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:c9dfcd56) REAL time: 13 secs 
+Phase 7.5  Local Placement Optimization (Checksum:bd932db7) REAL time: 15 secs 
 
 Phase 8.8  Global Placement
 ...
 ................
 ................
-Phase 8.8  Global Placement (Checksum:7ff6e753) REAL time: 13 secs 
+Phase 8.8  Global Placement (Checksum:30c4bfe0) REAL time: 15 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:7ff6e753) REAL time: 13 secs 
+Phase 9.5  Local Placement Optimization (Checksum:30c4bfe0) REAL time: 15 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:b04782f5) REAL time: 13 secs 
+Phase 10.18  Placement Optimization (Checksum:44145b64) REAL time: 15 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:b04782f5) REAL time: 13 secs 
+Phase 11.5  Local Placement Optimization (Checksum:44145b64) REAL time: 15 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:b04782f5) REAL time: 13 secs 
+Phase 12.34  Placement Validation (Checksum:44145b64) REAL time: 15 secs 
 
-Total REAL time to Placer completion: 13 secs 
-Total CPU  time to Placer completion: 13 secs 
+Total REAL time to Placer completion: 16 secs 
+Total CPU  time to Placer completion: 16 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:2452 - The IOB clk is either not constrained (LOC) to a
@@ -136,6 +136,11 @@ WARNING:PhysDesignRules:2452 - The IOB Data_in<3> is either not constrained
    (IOSTANDARD). This condition may seriously affect the device and will be an
    error in bitstream creation. It should be corrected by properly specifying
    the pin location and I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB grant is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB Data_in<4> is either not constrained
    (LOC) to a specific location and/or has an undefined I/O Standard
    (IOSTANDARD). This condition may seriously affect the device and will be an
@@ -212,7 +217,7 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   29
+Number of warnings:   30
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of 126,800    0%
   Number of Slice LUTs:                          9 out of  63,400    1%
@@ -225,7 +230,7 @@ Slice Logic Utilization:
     Number used exclusively as route-thrus:      0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     5 out of  15,850    1%
+  Number of occupied Slices:                     7 out of  15,850    1%
   Number of LUT Flip Flop pairs used:            9
     Number with an unused Flip Flop:             9 out of       9  100%
     Number with an unused LUT:                   0 out of       9    0%
@@ -242,7 +247,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        27 out of     210   12%
+  Number of bonded IOBs:                        28 out of     210   13%
     IOB Flip Flops:                             11
     IOB Latches:                                 4
 
@@ -285,11 +290,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.45
+Average Fanout of Non-Clock Nets:                1.44
 
-Peak Memory Usage:  4967 MB
-Total REAL time to MAP completion:  14 secs 
-Total CPU time to MAP completion:   14 secs 
+Peak Memory Usage:  4957 MB
+Total REAL time to MAP completion:  16 secs 
+Total CPU time to MAP completion:   16 secs 
 
 Mapping completed.
 See MAP report file "input_controler_map.mrp" for details.

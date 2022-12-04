@@ -25,7 +25,7 @@ module input_controler
 (input [N_ADD-1:0] X_cur,Y_cur,
  input [DATA_WIDTH-1:0] Data_in,
  output reg [DATA_WIDTH-1:0] Data_out,
- input empty,
+ input empty,grant,
  input clk,rst,
  output wire read,
  output reg [N_REGISTER-1:0] register
@@ -82,6 +82,6 @@ always@(posedge clk, posedge rst)
 			end
 	end
 	
-assign read = (rst == 0 && empty == 0) ? 1'b1 : 1'b0;
+assign read = (rst == 0 && empty == 0 && grant == 1) ? 1'b1 : 1'b0;
 
 endmodule

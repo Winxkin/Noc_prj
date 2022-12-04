@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-UOCPQU7::  Sun Dec 04 17:12:34 2022
+DESKTOP-UOCPQU7::  Sun Dec 04 18:11:34 2022
 
 par -w -intstyle ise -ol high -mt off switch_atriber_map.ncd switch_atriber.ncd
 switch_atriber.pcf 
@@ -27,26 +27,26 @@ Device speed data version:  "PRODUCTION 1.10 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    18 out of 126,800    1%
-    Number used as Flip Flops:                  18
+  Number of Slice Registers:                    23 out of 126,800    1%
+    Number used as Flip Flops:                  23
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         34 out of  63,400    1%
-    Number used as logic:                       34 out of  63,400    1%
-      Number using O6 output only:              32
+  Number of Slice LUTs:                         52 out of  63,400    1%
+    Number used as logic:                       52 out of  63,400    1%
+      Number using O6 output only:              49
       Number using O5 output only:               0
-      Number using O5 and O6:                    2
+      Number using O5 and O6:                    3
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:      0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    12 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:           34
-    Number with an unused Flip Flop:            17 out of      34   50%
-    Number with an unused LUT:                   0 out of      34    0%
-    Number of fully used LUT-FF pairs:          17 out of      34   50%
+  Number of occupied Slices:                    20 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:           52
+    Number with an unused Flip Flop:            30 out of      52   57%
+    Number with an unused LUT:                   0 out of      52    0%
+    Number of fully used LUT-FF pairs:          22 out of      52   42%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -59,7 +59,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        32 out of     210   15%
+  Number of bonded IOBs:                        37 out of     210   17%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -98,33 +98,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 8 secs 
-Finished initial Timing Analysis.  REAL time: 8 secs 
+Starting initial Timing Analysis.  REAL time: 10 secs 
+Finished initial Timing Analysis.  REAL time: 10 secs 
 
 Starting Router
 
 
-Phase  1  : 192 unrouted;      REAL time: 9 secs 
+Phase  1  : 350 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 185 unrouted;      REAL time: 9 secs 
+Phase  2  : 335 unrouted;      REAL time: 11 secs 
 
-Phase  3  : 24 unrouted;      REAL time: 9 secs 
+Phase  3  : 62 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 24 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  4  : 62 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
 Updating file: switch_atriber.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
-Total REAL time to Router completion: 11 secs 
-Total CPU time to Router completion: 11 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Total REAL time to Router completion: 14 secs 
+Total CPU time to Router completion: 14 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -144,8 +144,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.830ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.263ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.246ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.321ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -161,10 +161,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 12 secs 
+Total REAL time to PAR completion: 14 secs 
+Total CPU time to PAR completion: 14 secs 
 
-Peak Memory Usage:  4855 MB
+Peak Memory Usage:  4845 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

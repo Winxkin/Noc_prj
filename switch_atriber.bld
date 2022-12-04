@@ -26,10 +26,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4440288 kilobytes
+Total memory usage is 4440224 kilobytes
 
 Writing NGD file "switch_atriber.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "switch_atriber.bld"...

@@ -31,6 +31,7 @@ module input_controler_tb;
 	reg empty;
 	reg clk;
 	reg rst;
+	reg grant;
 
 	// Outputs
 	wire [7:0] Data_out;
@@ -47,7 +48,8 @@ module input_controler_tb;
 		.clk(clk), 
 		.rst(rst), 
 		.read(read), 
-		.register(register)
+		.register(register),
+		.grant(grant)
 	);
 
 	initial begin

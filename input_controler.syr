@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: input_controler.prj
 
@@ -223,7 +223,8 @@ Top Level Output File Name         : input_controler.ngc
 Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 14
-#      LUT2                        : 9
+#      LUT2                        : 8
+#      LUT3                        : 1
 #      LUT4                        : 1
 #      LUT5                        : 2
 #      LUT6                        : 2
@@ -234,8 +235,8 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 26
-#      IBUF                        : 14
+# IO Buffers                       : 27
+#      IBUF                        : 15
 #      OBUF                        : 12
 
 Device utilization summary:
@@ -256,8 +257,8 @@ Slice Logic Distribution:
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          27
- Number of bonded IOBs:                  27  out of    210    12%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    210    13%  
     IOB Flip Flops/Latches:              15
 
 Specific Feature Utilization:
@@ -299,7 +300,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: 2.245ns
    Maximum output required time after clock: 0.640ns
-   Maximum combinational path delay: 0.807ns
+   Maximum combinational path delay: 0.939ns
 
 Timing Details:
 ---------------
@@ -367,9 +368,9 @@ Offset:              0.640ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2 / 1
+  Total number of paths / destination ports: 3 / 1
 -------------------------------------------------------------------------
-Delay:               0.807ns (Levels of Logic = 3)
+Delay:               0.939ns (Levels of Logic = 3)
   Source:            rst (PAD)
   Destination:       read (PAD)
 
@@ -377,12 +378,12 @@ Delay:               0.807ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   0.001   0.430  rst_IBUF (rst_IBUF)
-     LUT2:I0->O            1   0.097   0.279  read1 (read_OBUF)
+     IBUF:I->O            12   0.001   0.562  rst_IBUF (rst_IBUF)
+     LUT3:I0->O            1   0.097   0.279  read1 (read_OBUF)
      OBUF:I->O                 0.000          read_OBUF (read)
     ----------------------------------------
-    Total                      0.807ns (0.098ns logic, 0.709ns route)
-                                       (12.1% logic, 87.9% route)
+    Total                      0.939ns (0.098ns logic, 0.841ns route)
+                                       (10.4% logic, 89.6% route)
 
 =========================================================================
 
@@ -400,8 +401,8 @@ rst            |         |    2.667|         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.15 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.68 secs
  
 --> 
 

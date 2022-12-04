@@ -22,6 +22,7 @@ module switch_atriber
 #(parameter N_BIT_SEL = 3,
   parameter N_REGISTER = 3)
 ( input [N_REGISTER-1:0] request_L, request_N, request_E, request_S, request_W,
+  output reg grant_L,grant_N,grant_E,grant_S,grant_W,
   input clk, rst,
   output reg [N_BIT_SEL-1:0] select_L, select_N, select_E, select_S, select_W
 );
@@ -60,6 +61,12 @@ always@(posedge clk, posedge rst)
 				select_E = IN_NON;
 				select_W = IN_NON;
 				select_S = IN_NON;
+				grant_L = 0;
+				grant_N = 0;
+				grant_E = 0;
+				grant_W = 0;
+				grant_S = 0;
+
 				/*reset count*/
 				count = 0;
 			end
@@ -122,6 +129,38 @@ always@(posedge clk, posedge rst)
 									4: select_S = IN_W; //W
 								endcase
 							end
+					/*hanlde ack*/
+					/*grant Local*/
+						if(select_L == IN_L || select_N == IN_L || select_E == IN_L ||
+							select_W == IN_L || select_S == IN_L)
+								grant_L = 1;
+						else
+								grant_L = 0;
+					/*grant North*/
+						if(select_L == IN_N || select_N == IN_N || select_E == IN_N ||
+							select_W == IN_N || select_S == IN_N)
+								grant_N = 1;
+						else
+								grant_N = 0;
+					/*grant East*/
+						if(select_L == IN_E || select_N == IN_E || select_E == IN_E ||
+							select_W == IN_E || select_S == IN_E)
+								grant_E = 1;
+						else
+								grant_E = 0;	
+					/*grant West*/
+						if(select_L == IN_W || select_N == IN_W || select_E == IN_W ||
+							select_W == IN_W || select_S == IN_W)
+								grant_W = 1;
+						else
+								grant_W = 0;
+					/*grant South*/
+						if(select_L == IN_S || select_N == IN_S || select_E == IN_S ||
+							select_W == IN_S || select_S == IN_S)
+								grant_S = 1;
+						else
+								grant_S = 0;
+								
 					end
 					
 				/*increase count count 0 -> 4*/
