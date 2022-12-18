@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module block_output
 #(parameter DATA_WIDTH = 8)
-(input [DATA_WIDTH-1:0]Data_in,
- output [DATA_WIDTH-1:0]Data_out,
+(input [DATA_WIDTH-1:0]Data_in, 
+ output [DATA_WIDTH-1:0]Data_out, /*outside*/
  input clk,rst,
  input ret, /*if ret = 1 meaning the input buffer of neighbor is full*/
  output val, /*request to neighbor router to sent package*/

@@ -28,7 +28,7 @@ input clk,rst,
 input grant, /*check to transfer data from buffer in to switch*/
 input val,  /*signal request sent package from neighbor router*/
 output ret, /*ack for neighbor router know that buffer is full or not*/
-input [DATA_WIDTH-1:0]Data_in,
+input [DATA_WIDTH-1:0]Data_in, /*outside*/
 output [DATA_WIDTH-1:0]Data_out,
 output [N_REGISTER-1:0] register /*notify for switch to determined the destination of package */ /*->Roud robin*/
     );
