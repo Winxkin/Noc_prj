@@ -26,7 +26,8 @@ module switch
  output [DATA_WIDTH-1:0] Out_L, Out_N, Out_E, Out_W, Out_S,
  input clk, rst,
  input [N_REGISTER-1:0] request_L, request_N, request_E, request_S, request_W,
- output grant_L,grant_N,grant_E,grant_S,grant_W
+ output grant_L,grant_N,grant_E,grant_S,grant_W,
+ input full_L, full_N, full_E, full_S, full_W /*notify from Output controler is buffer out has full*/
     );
 
 wire [N_BIT_SEL-1:0] select_L, select_N, select_E, select_S, select_W;
@@ -39,7 +40,8 @@ crossbar ST (.In_L(In_L),.In_N(In_N),.In_E(In_E),.In_W(In_W),.In_S(In_S),
 switch_atriber SA (.clk(clk),.rst(rst),
 							.select_L(select_L),.select_N(select_N),.select_E(select_E),.select_S(select_S),.select_W(select_W),
 							.request_L(request_L),.request_N(request_N),.request_E(request_E),.request_S(request_S),.request_W(request_W),
-							.grant_L(grant_L),.grant_N(grant_N),.grant_E(grant_E),.grant_S(grant_S),.grant_W(grant_W));
+							.grant_L(grant_L),.grant_N(grant_N),.grant_E(grant_E),.grant_S(grant_S),.grant_W(grant_W),
+							.full_L(full_L),.full_N(full_N),.full_E(full_E),.full_S(full_S),.full_W(full_W));
 
 
 endmodule

@@ -25,7 +25,7 @@ module block_input
 (
 input [N_ADD-1:0] X_cur,Y_cur,  /*address of router in networt on chip*/
 input clk,rst,
-input grant,
+input grant, /*check to transfer data from buffer in to switch*/
 input val,  /*signal request sent package from neighbor router*/
 output ret, /*ack for neighbor router know that buffer is full or not*/
 input [DATA_WIDTH-1:0]Data_in,
@@ -33,7 +33,7 @@ output [DATA_WIDTH-1:0]Data_out,
 output [N_REGISTER-1:0] register /*notify for switch to determined the destination of package */ /*->Roud robin*/
     );
 /*define wire*/
-wire write_wire, read_write;
+wire write_wire, read_wire;
 wire empty_wire,full_wire; 
 wire [DATA_WIDTH-1:0]Data_bus;
 /*connect block module*/

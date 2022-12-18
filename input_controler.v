@@ -47,7 +47,7 @@ always@(posedge clk, posedge rst)
 			end
 		else
 			begin
-				if(!empty)
+				if(!empty && grant == 1)
 				begin
 					data_reg = Data_in;
 					x_add_des = {data_reg[1],data_reg[0]}; //get x_des address

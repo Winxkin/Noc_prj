@@ -79,9 +79,12 @@ module block_input_tb;
 		Data_in = 8'b10111000;
 		#20
 		val = 0;
-		#20;
+		#20
 		grant = 1;
-		
+		#40
+		grant = 0;
+		#80
+		grant = 1;
 		// Add stimulus here
 
 	end

@@ -37,6 +37,11 @@ module switch_tb;
 	reg [2:0] request_E;
 	reg [2:0] request_S;
 	reg [2:0] request_W;
+	reg full_L;
+	reg full_N;
+	reg full_S;
+	reg full_W;
+	reg full_E;
 
 	// Outputs
 	wire [7:0] Out_L;
@@ -73,7 +78,12 @@ module switch_tb;
 		.grant_N(grant_N), 
 		.grant_E(grant_E), 
 		.grant_S(grant_S), 
-		.grant_W(grant_W)
+		.grant_W(grant_W),
+		.full_L(full_L),
+		.full_N(full_N),
+		.full_E(full_E),
+		.full_S(full_S),
+		.full_W(full_W)
 	);
 
 	initial begin
@@ -90,6 +100,11 @@ module switch_tb;
 		request_E = 7;
 		request_S = 7;
 		request_W = 7;
+		full_L = 0;
+		full_N = 0;
+		full_S = 0;
+		full_W = 0;
+		full_E = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
@@ -100,9 +115,11 @@ module switch_tb;
 		request_W = 0;
 		#100;
 		In_W = 5;
+		full_L = 1;
 		#20;
 		In_W =6;
 		#20;
+		full_L = 0;
 		In_W = 7;
       #100;
 		request_E = 0;
