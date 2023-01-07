@@ -65,6 +65,7 @@ module FIFO_buffer_tb;
 		rst = 0;
 		#20
 		write = 1;
+		#5;
 		Data_in = 1;
 		#20
 		Data_in = 2;
@@ -88,8 +89,10 @@ module FIFO_buffer_tb;
 		Data_in = 11;
 		#30
 		write = 0;
-		#20
+		Data_in = 0;
 		read = 1;
+		#100;
+		read = 0;
 		
 	end
 	

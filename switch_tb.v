@@ -111,19 +111,18 @@ module switch_tb;
 		rst = 1;
 		#25;
 		rst = 0;
-      #10;
-		request_W = 0;
-		#100;
-		In_W = 5;
-		full_L = 1;
-		#20;
-		In_W =6;
-		#20;
-		full_L = 0;
-		In_W = 7;
       #100;
 		request_E = 0;
-		request_S = 2;
+		request_S = 0;
+		request_L = 0;
+		request_N = 0;
+		request_W = 0;
+		#100;
+		request_L = 7;
+		request_N = 7;
+		request_E = 7;
+		request_S = 7;
+		request_W = 7;
 		// Add stimulus here
 
 	end

@@ -47,7 +47,7 @@ always@(posedge clk, posedge rst)
 			end
 		else
 			begin
-				if(!empty && grant == 1)
+				if(empty == 0)
 				begin
 					data_reg = Data_in;
 					x_add_des = {data_reg[1],data_reg[0]}; //get x_des address
@@ -74,7 +74,7 @@ always@(posedge clk, posedge rst)
 								register = 3'b010; /*output = W <-*/
 						end
 				end
-				else
+				if(empty == 1)
 					begin
 						Data_out = 0;
 						register = not_register;

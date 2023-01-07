@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_output_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_output_tb_beh.prj" "work.block_output_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/dummy_tb_isim_beh.exe" -prj "D:/LuanVan/Xlinx/Noc_prj/Noc_prj/dummy_tb_beh.prj" "work.dummy_tb" "work.glbl" 

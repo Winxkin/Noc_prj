@@ -25,7 +25,7 @@ module block_output
  input clk,rst,
  input ret, /*if ret = 1 meaning the input buffer of neighbor is full*/
  output val, /*request to neighbor router to sent package*/
- output full
+ output full  /*notify for switch atriber buffer output has full*/
     );
 /*define wire*/
 wire write_wire, read_wire;

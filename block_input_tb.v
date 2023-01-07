@@ -70,6 +70,7 @@ module block_input_tb;
 		#50
 		val = 1; /*request sent package to router*/
 		#20
+		
 		Data_in = 8'b11111010;
 		#20
 		Data_in = 8'b11111000;

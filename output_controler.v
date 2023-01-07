@@ -18,12 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module output_controler(
+module output_controler
+#(parameter DATA_WIDTH = 8)
+(
 input full,
-output write, full_ret
-    );
+output write, full_ret,
+input [DATA_WIDTH-1:0] Data_in
+ );
 
 assign full_ret = full;
-assign write = (full == 0) ? 1'b1 : 1'b0;
+assign write = (full == 0 && Data_in != 0) ? 1'b1 : 1'b0;
 
 endmodule

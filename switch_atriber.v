@@ -84,6 +84,7 @@ always@(posedge clk, posedge rst)
 									2: select_L = IN_E; //E
 									3: select_L = IN_S; //S
 									4: select_L = IN_W; //W
+									default: select_L = IN_NON;
 								endcase
 							end
 					/*Output East control*/
@@ -95,6 +96,7 @@ always@(posedge clk, posedge rst)
 									2: select_E = IN_E; //E
 									3: select_E = IN_S; //S
 									4: select_E = IN_W; //W
+									default: select_E = IN_NON;
 								endcase
 							end
 					/*Output West control*/
@@ -106,6 +108,7 @@ always@(posedge clk, posedge rst)
 									2: select_W = IN_E; //E
 									3: select_W = IN_S; //S
 									4: select_W = IN_W; //W
+									default: select_W = IN_NON;
 								endcase
 							end
 					/*Output North control*/
@@ -117,6 +120,7 @@ always@(posedge clk, posedge rst)
 									2: select_N = IN_E; //E
 									3: select_N = IN_S; //S
 									4: select_N = IN_W; //W
+									default: select_N = IN_NON;
 								endcase
 							end
 					/*Output South control*/
@@ -128,12 +132,21 @@ always@(posedge clk, posedge rst)
 									2: select_S = IN_E; //E
 									3: select_S = IN_S; //S
 									4: select_S = IN_W; //W
+									default: select_S = IN_NON;
 								endcase
+							end
+						else
+							begin
+								select_L = IN_NON;
+								select_N = IN_NON;
+								select_E = IN_NON;
+								select_W = IN_NON;
+								select_S = IN_NON;
 							end
 					/*hanlde ack*/
 					/*grant Local*/
 						if((select_L == IN_L && full_L == 1'b0) || (select_N == IN_L && full_N == 1'b0) || (select_E == IN_L && full_E == 1'b0) ||
-							(select_W == IN_L && full_W == 1'b0) || (select_S == IN_L && full_S == 1'b0) )
+							(select_W == IN_L && full_W == 1'b0) || (select_S == IN_L && full_S == 1'b0))
 								grant_L = 1;
 						else
 								grant_L = 0;
@@ -145,7 +158,7 @@ always@(posedge clk, posedge rst)
 								grant_N = 0;
 					/*grant East*/
 						if((select_L == IN_E && full_L == 1'b0) || (select_N == IN_E && full_N == 1'b0) || (select_E == IN_E && full_E == 1'b0) ||
-							(select_W == IN_E && full_W == 1'b0) || (select_S == IN_E && full_S == 1'b0))
+							(select_W == IN_E && full_W == 1'b0) || (select_S == IN_E && full_S == 1'b0))							 
 								grant_E = 1;
 						else
 								grant_E = 0;	
@@ -171,6 +184,6 @@ always@(posedge clk, posedge rst)
 					count = count + 1;
 			end
 	end
-
+	
 
 endmodule
