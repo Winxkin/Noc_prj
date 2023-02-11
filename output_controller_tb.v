@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   16:21:21 12/18/2022
-// Design Name:   block_output
-// Module Name:   D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_output_tb.v
+// Create Date:   13:22:19 02/11/2023
+// Design Name:   output_controler
+// Module Name:   D:/LuanVan/Xlinx/Noc_prj/Noc_prj/output_controller_tb.v
 // Project Name:  Noc_prj
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: block_output
+// Verilog Test Fixture created by ISE for module: output_controler
 //
 // Dependencies:
 // 
@@ -22,57 +22,51 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module block_output_tb;
+module output_controller_tb;
 
 	// Inputs
-	reg [7:0] Data_in;
 	reg clk;
 	reg rst;
 	reg ret;
+	reg [7:0] Data_in;
 
 	// Outputs
+	wire full_ret;
 	wire [7:0] Data_out;
 	wire val;
-	wire full;
 
 	// Instantiate the Unit Under Test (UUT)
-	block_output uut (
-		.Data_in(Data_in), 
-		.Data_out(Data_out), 
+	output_controler uut (
 		.clk(clk), 
 		.rst(rst), 
 		.ret(ret), 
-		.val(val), 
-		.full(full)
+		.full_ret(full_ret), 
+		.Data_in(Data_in), 
+		.Data_out(Data_out), 
+		.val(val)
 	);
 
 	initial begin
 		// Initialize Inputs
-		Data_in = 0;
 		clk = 0;
 		rst = 0;
 		ret = 0;
+		Data_in = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
 		rst = 1;
-		#25;
+		#20;
 		rst = 0;
 		#20;
-		
-		#100;
-      Data_in = 8'b11111010; 
-		#20;
-		Data_in = 8'b11111011;
+		Data_in = 5;
 		#20;
 		Data_in = 0;
-		#50;
-		ret = 0;
+        
 		// Add stimulus here
 
 	end
-	
-	always #10 clk = ~clk;
-      
+   
+always #10 clk = ~clk;   
 endmodule
 

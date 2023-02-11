@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   15:53:50 12/01/2022
-// Design Name:   block_input
-// Module Name:   D:/LuanVan/Xlinx/Noc_prj/Noc_prj/block_input_tb.v
+// Create Date:   13:47:55 02/11/2023
+// Design Name:   dummy_in_out
+// Module Name:   D:/LuanVan/Xlinx/Noc_prj/Noc_prj/dummy_in_out_tb.v
 // Project Name:  Noc_prj
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: block_input
+// Verilog Test Fixture created by ISE for module: dummy_in_out
 //
 // Dependencies:
 // 
@@ -22,70 +22,74 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module block_input_tb;
+module dummy_in_out_tb;
 
 	// Inputs
-	reg [1:0] X_cur;
-	reg [1:0] Y_cur;
+	reg [1:0] X_address;
+	reg [1:0] Y_address;
 	reg clk;
 	reg rst;
-	reg val;
-	reg [7:0] Data_in;
 	reg grant;
+	reg [7:0] Data_in;
+
 	// Outputs
-	wire ret;
 	wire [7:0] Data_out;
+	wire [7:0] Data_bus;
 	wire [2:0] register;
+	wire full;
+	wire val;
+	wire ret;
 
 	// Instantiate the Unit Under Test (UUT)
-	block_input uut (
-		.X_cur(X_cur), 
-		.Y_cur(Y_cur), 
+	dummy_in_out uut (
+		.X_address(X_address), 
+		.Y_address(Y_address), 
 		.clk(clk), 
 		.rst(rst), 
-		.val(val), 
-		.ret(ret), 
+		.grant(grant), 
 		.Data_in(Data_in), 
 		.Data_out(Data_out), 
-		.register(register),
-		.grant(grant)
+		.register(register), 
+		.full(full),
+		.val(val),
+		.ret(ret),
+		.Data_bus(Data_bus)
 	);
 
 	initial begin
 		// Initialize Inputs
-		X_cur = 2'b00;
-		Y_cur = 2'b00;
+		X_address = 0;
+		Y_address = 0;
 		clk = 0;
 		rst = 0;
-		val = 0;
-		Data_in = 0;
 		grant = 0;
+		Data_in = 0;
+
 		// Wait 100 ns for global reset to finish
 		#100;
 		rst = 1;
-		#20
+		#20;
 		rst = 0;
-		#10
-		Data_in = 8'b10101110;
-		#50
-		val = 1; /*request sent package to router*/
-		#20
-		
-		Data_in = 8'b11111010;
-		#20
-		Data_in = 8'b11111000;
-		#20
-		Data_in = 8'b11110010; /*package correct address*/
-      #20
-		Data_in = 8'b10111000;
-		#20
-		val = 0;
-		#20
+		#20;
+		Data_in = 5;
+		grant = 0;
+		#20;
+		Data_in = 7;
+		#20;
+		Data_in = 8;
+		#20;
+		Data_in = 9;
 		grant = 1;
-		#40
-		//grant = 0;
-		#80
-		grant = 1;
+		#20;
+		Data_in = 10;
+		#20;
+		Data_in = 11;
+		#20;
+		Data_in = 12;
+		#20;
+		Data_in = 0;
+		#40;
+    
 		// Add stimulus here
 
 	end

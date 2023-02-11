@@ -69,7 +69,7 @@ block_input INPUT_S(.X_cur(X_address),.Y_cur(Y_address),.clk(clk),.rst(rst),
 							.grant(grant_S),.val(val_in_S),.ret(ret_in_S));
 
 /*5 Port OUT*/
-
+/*
 block_output OUTPUT_L(.clk(clk),.rst(rst),
 								.Data_in(Out_L),.Data_out(Data_out_L),
 								.ret(ret_out_L),.val(val_out_L),.full(full_L));
@@ -90,6 +90,6 @@ block_output OUTPUT_S(.clk(clk),.rst(rst),
 								.Data_in(Out_S),.Data_out(Data_out_S),
 								.ret(ret_out_S),.val(val_out_S),.full(full_S));
 								
-
+*/
 								
 endmodule

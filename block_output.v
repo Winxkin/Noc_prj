@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module block_output
 #(parameter DATA_WIDTH = 8)
-(input [DATA_WIDTH-1:0]Data_in, 
- output [DATA_WIDTH-1:0]Data_out, /*outside*/
+(input [DATA_WIDTH-1:0]Data_in, /*data from switch*/
+ output [DATA_WIDTH-1:0]Data_out, /*outside (reg)*/
  input clk,rst,
  input ret, /*if ret = 1 meaning the input buffer of neighbor is full*/
  output val, /*request to neighbor router to sent package*/
@@ -30,12 +30,21 @@ module block_output
 /*define wire*/
 wire write_wire, read_wire;
 wire empty_wire,full_wire; 
+wire [DATA_WIDTH-1:0]data_bus;
 /*connect block module*/
+/*
 FIFO_Buffer BUFFER(.Data_in(Data_in),.clk(clk),.rst(rst),.write(write_wire),.read(read_wire),
-							.empty(empty_wire),.full(full_wire),.Data_out(Data_out));
+							.empty(empty_wire),.full(full_wire),.Data_out(data_bus));
+*/
 
-output_flow_control OFC(.empty(empty_wire),.ret(ret),.val(val),.read(read_wire));
+output_flow_control OFC(.clk(clk),.rst(rst),
+								.empty(empty_wire),.read(read_wire),
+								.ret(ret),.val(val),
+								.Data_out(Data_out),.Data_in(data_bus)
+								);
 
-output_controler OC(.full(full_wire),.full_ret(full),.write(write_wire));
+output_controler OC(.full(full_wire),.full_ret(full),
+							.write(write_wire),.Data_in(Data_in)
+							);
 
 endmodule

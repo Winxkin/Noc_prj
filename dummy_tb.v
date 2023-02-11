@@ -155,7 +155,7 @@ module dummy_tb;
       #15;
 		Data_in_L = 8'b00001111;
 		val_in_L = 1;
-		Data_in_N = 8'b00011111;
+		Data_in_N = 8'b00011100;
 		val_in_N = 1;
 		Data_in_S = 8'b00111111;
 		val_in_S = 1;
@@ -163,7 +163,7 @@ module dummy_tb;
 		val_in_W = 1;
 		Data_in_E = 8'b01011111;
 		val_in_E = 1;
-		#40;
+		#20;
       //Data_in_L = 8'b10001111;
 	
 		val_in_L = 0;

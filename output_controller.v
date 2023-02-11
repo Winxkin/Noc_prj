@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: HCMUTE
-// Engineer: Huan Nguyen Duy
+// Company: 
+// Engineer: 
 // 
-// Create Date:    15:58:12 12/18/2022 
+// Create Date:    13:26:29 02/11/2023 
 // Design Name: 
-// Module Name:    output_controler 
+// Module Name:    output_controller 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -21,21 +21,26 @@
 module output_controller
 #(parameter DATA_WIDTH = 8)
 (
-//input clk,rst,
+input clk,rst,
 input ret, /*mapping with full signal from neghbour router*/
 output full_ret, /*passing the ret signal from block input to SW*/ 
 input [DATA_WIDTH-1:0] Data_in,
-output [DATA_WIDTH-1:0] Data_out,
+output reg [DATA_WIDTH-1:0] Data_out,
 output val /*notify for OFC that are not data at input | free = 1 => Having not data*/
  );
-/*
+
 always@(posedge clk, posedge rst)
 begin
 	if(rst)
-		Data_out = 0;
+		begin
+			Data_out = 0;
+		end
+	else
+		begin
+			if(ret == 0 && Data_in!= 0)
+				Data_out = Data_in;
+			else
+				Data_out = 0;
+		end
 
-end*/
-assign Data_out = Data_in;
-assign val = (ret == 0 && Data_in!= 0) ? 1'b1 : 1'b0; /*mapping to val*/
-assign full_ret = ret;
-endmodule
+end

@@ -18,11 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module output_flow_control(
-   input empty, ret, /*if ret = 1 meaning the input buffer of neighbor is full*/
-	output val, read
-    );
+module output_flow_control
+(
+input ret, /*if ret = 1 meaning the input buffer of neighbor is full*/
+output val,	/*val: request to send package from neighbor router | val = 1 to send*/
+input free, /*mapping to val*/
+output rettoOC /*mapping to ret*/
+);
 
-assign val = (empty == 0 && ret == 0) ? 1'b1 : 1'b0;
-assign read = val;
+assign val = free;
+assign rettoOC = ret;
+	
 endmodule

@@ -30,7 +30,7 @@ module dummy
  output ret_in_L, ret_in_N, ret_in_S, ret_in_E, ret_in_W,   /*ack for neighbor router know that buffer is full or not*/
  input ret_out_L, ret_out_N, ret_out_S, ret_out_E, ret_out_W,  /*if ret = 1 meaning the input buffer of neighbor is full*/
  output val_out_L, val_out_N, val_out_S, val_out_E, val_out_W,	/*request to neighbor router to sent package*/
- input full_L, full_N, full_E, full_S, full_W,
+ input full_L, full_N, full_E, full_S, full_W, /*connect to OCM*/
  output [N_REGISTER-1:0] r_L, r_N, r_E, r_S, r_W
 	 );
 /*define data wire*/
