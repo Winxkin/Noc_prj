@@ -11,7 +11,4 @@ Mục tiêu đề tài:
             2.2.1.Thiết kế bộ crossbar 5 cổng.
             2.2.2.Thiết kế bộ điều khiển chuyển mạch nhằm mục đích tránh việc tranh chấp gói tin trong router.
         2.3.Thiết kế khối điều khiển gói tin đầu ra.
-            2.3.1.Thiết kế bộ đệm lưu trữ gói tin đầu ra tại mỗi cổng của router.
-            2.3.2.Thiết kế bộ điều khiển kiểm soát lưu lượng gói tin đầu ra.
-            2.3.3.Thiết kế bộ điều khiển đầu ra nhằm mục đích giao tiếp với các router lân cận để yêu cầu gửi gói tin.
     3.Triển khai mô phỏng 1 mạng lưới network-on-chip 4x4 với 16 router và đánh giá kết quả.
