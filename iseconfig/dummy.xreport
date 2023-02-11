@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-02-10T20:33:09</DateModified>
-  <ModuleName>block_output</ModuleName>
+  <DateModified>2023-02-11T15:00:32</DateModified>
+  <ModuleName>dummy</ModuleName>
   <SummaryTimeStamp>2023-02-10T20:31:45</SummaryTimeStamp>
   <SavedFilePath>D:/LuanVan/Xlinx/Noc_prj/Noc_prj/iseconfig/dummy.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/LuanVan/Xlinx/Noc_prj/Noc_prj\</ImplementationReportsDirectory>
