@@ -1,6 +1,6 @@
 # Noc_prj
 Project: Design router 5 port for Network-on-chip
-Mục tiêu đề tài:
+Target:
     1.Investigate SOC architecture and the communication mechanism among componants in SOC chip.
     2.Design router 5 port
         2.1.Design Input block
