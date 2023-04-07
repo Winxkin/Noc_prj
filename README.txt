@@ -10,5 +10,5 @@ Target:
         2.2.Design switch block.
             2.2.1.Design Crossbar 5 port
             2.2.2.Design round robin block.
-        2.3.Design Out put block.
+        2.3.Design Output block.
    
